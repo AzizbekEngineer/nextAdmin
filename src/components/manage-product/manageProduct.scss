@@ -1,0 +1,30 @@
+.manageProduct {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    &__delete {
+        color: red;
+    }
+
+    &__edit {
+        color: green;
+    }
+}
+
+.product__manage__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        background: transparent;
+        border-radius: 4px;
+        font-size: 28px;
+    }
+}

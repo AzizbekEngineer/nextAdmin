@@ -1,0 +1,46 @@
+.manage__category {
+    padding: 20px;
+
+    &__cards {
+        padding: 20px 0;
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__title {
+        font-size: 28px;
+        color: green;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__delete {
+        color: red;
+    }
+
+    &__edit {
+        color: green;
+    }
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background: transparent;
+            border-radius: 4px;
+            font-size: 28px;
+        }
+    }
+}

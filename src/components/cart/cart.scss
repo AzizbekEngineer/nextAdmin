@@ -1,0 +1,160 @@
+.cart {
+    padding: 30px 0;
+
+    &__remove__all {
+        button {
+            padding: 10px 20px;
+            background: #56B280;
+            border: none;
+            color: red;
+            font-size: 18px;
+        }
+    }
+
+    table {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+
+    td,
+    th {
+        text-align: start;
+        padding: 10px 20px;
+    }
+
+    &__product {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    &__remove__btn {
+        border: 1px salmon solid;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FF6875;
+        background: #ff687537;
+
+        svg {
+            font-size: 28px;
+        }
+    }
+
+    &__title {
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    &__count {
+        padding: 0 10px;
+        max-width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        background: #dddddd82;
+
+        button {
+            border: none;
+            padding: 6px;
+            font-size: 16px;
+            color: #56B280;
+            background: transparent;
+            display: block;
+        }
+    }
+
+    &__item {
+        display: none;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+
+        button {
+            padding: 10px 20px;
+            height: 100%;
+            border: none;
+            background: #56B280;
+            color: white;
+        }
+    }
+
+    &__box__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__bottom__price {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__bottom__right {
+        button {
+            border: 1px solid #56B280;
+            padding: 10px;
+            font-size: 18px;
+            color: white;
+            background: #56B280;
+            display: block;
+        }
+    }
+
+
+    @media (max-width:600px) {
+        &__item {
+            display: block;
+        }
+
+        thead tr {
+            display: none;
+        }
+
+        table {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        td {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            align-items: center;
+        }
+    }
+}
