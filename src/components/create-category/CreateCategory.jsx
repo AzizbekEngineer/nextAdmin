@@ -27,6 +27,7 @@ const CreateCategory = () => {
       <h3 className="form__title">Create Category</h3>
       <form action="" onSubmit={handleCreate} className="form__wrapper">
         <input
+          required
           type="text"
           value={newCategory.title}
           name="title"

@@ -37,6 +37,7 @@ const CreateProduct = () => {
       <h2 className="form__title">CreateProduct</h2>
       <form className="form__info" onSubmit={handleCreate} action="">
         <input
+          required
           type="text"
           name="title"
           value={newProduct.title}
@@ -44,6 +45,7 @@ const CreateProduct = () => {
           onChange={handleChange}
         />
         <input
+          required
           type="number"
           name="price"
           value={newProduct.price}
@@ -51,6 +53,7 @@ const CreateProduct = () => {
           placeholder="Enter product price"
         />
         <input
+          required
           type="text"
           name="images"
           disabled
@@ -69,6 +72,7 @@ const CreateProduct = () => {
           ))}
         </select>
         <textarea
+          required
           onChange={handleChange}
           name="desc"
           value={newProduct.desc}
