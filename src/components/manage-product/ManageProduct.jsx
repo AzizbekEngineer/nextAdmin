@@ -31,6 +31,7 @@ const ManageProduct = () => {
           <h3 className="product__title">{el.title}</h3>
         </Link>
         <h4 className="product__price">{el.price}</h4>
+        <p className="manageProduct__desc">{el.desc}</p>
         <div className="product__manage__btns">
           <button
             className="manageProduct__delete"
